@@ -1,0 +1,75 @@
+.footer {
+  background: linear-gradient(180deg, #1b1b1b, #111);
+  color: #f2f2f2;
+  padding: 40px 0 20px 0;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.6);
+  border-top: 2px solid #1aaf5d;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo {
+  text-align: center;
+}
+
+.footer-logo img {
+  height: 60px;
+  width: auto;
+  filter: brightness(0.9);
+}
+
+.footer-logo h2 {
+  font-size: 1.4em;
+  color: #1aaf5d;
+  margin-top: 8px;
+  letter-spacing: 1px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.2s ease;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #1aaf5d;
+}
+
+.footer-social a img {
+  height: 26px;
+  width: 26px;
+  margin: 0 8px;
+  filter: brightness(0.8);
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.footer-social a img:hover {
+  transform: scale(1.15);
+  filter: brightness(1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #aaa;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}

@@ -1,0 +1,138 @@
+.carrito-container {
+  background: radial-gradient(circle at top left, #1c1c1c, #121212);
+  color: #fff;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 25px 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.carrito-container h2 {
+  text-align: center;
+  font-size: 1.8em;
+  color: #1aaf5d;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.carrito-vacio {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 1.1em;
+  color: #aaa;
+}
+
+.carrito-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* --- Items del carrito --- */
+.carrito-item {
+  display: flex;
+  align-items: center;
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 12px 16px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carrito-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+}
+
+.carrito-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 18px;
+}
+
+.carrito-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carrito-info h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.carrito-info .precio {
+  color: #1aaf5d;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* --- Botones --- */
+.acciones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 25px;
+  padding: 10px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 1em;
+}
+
+.btn-vaciar {
+  background: #333;
+  color: #fff;
+  border: 2px solid #444;
+}
+
+.btn-vaciar:hover {
+  background: #1a1a1a;
+  border-color: #1aaf5d;
+  color: #1aaf5d;
+}
+
+.btn-pagar {
+  background: #1aaf5d;
+  color: #fff;
+  border: 2px solid #1aaf5d;
+}
+
+.btn-pagar:hover {
+  background: transparent;
+  color: #1aaf5d;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  .carrito-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .carrito-item img {
+    margin: 0 0 10px 0;
+  }
+
+  .acciones {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 100%;
+  }
+}

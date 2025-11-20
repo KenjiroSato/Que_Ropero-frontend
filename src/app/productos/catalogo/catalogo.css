@@ -1,0 +1,156 @@
+/* Fondo general */
+.catalogo-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px 20px;
+  background: radial-gradient(circle at top left, #5d5959, #121212);
+  color: #fff;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+/* Panel lateral */
+.filtro-lateral {
+  background: #181818;
+  border: 1px solid #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  width: 260px;
+  min-width: 240px;
+  transition: transform 0.3s ease;
+}
+
+.filtro-lateral:hover {
+  transform: translateY(-3px);
+}
+
+.filtro-lateral h2 {
+  font-size: 1.5em;
+  color: #1aaf5d;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.busqueda input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #fff;
+  font-size: 0.95em;
+  transition: box-shadow 0.3s ease;
+}
+
+.busqueda input:focus {
+  box-shadow: 0 0 8px #1aaf5d;
+}
+
+.filtro-seccion {
+  margin-top: 25px;
+}
+
+.filtro-seccion h3 {
+  color: #1aaf5d;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.filtro-seccion label {
+  display: block;
+  font-size: 0.95em;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.filtro-seccion input[type="checkbox"] {
+  accent-color: #1aaf5d;
+  margin-right: 8px;
+}
+
+.btn-aplicar {
+  display: block;
+  width: 100%;
+  background: #1aaf5d;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 0;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-aplicar:hover {
+  background: #17a153;
+  transform: scale(1.03);
+}
+
+/* Catálogo */
+.productos-camisetas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex: 1;
+  max-width: 900px;
+}
+
+.producto {
+  background: #1e1e1e;
+  border-radius: 12px;
+  text-align: center;
+  padding: 18px;
+  width: 230px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(26, 175, 93, 0.3);
+}
+
+.producto img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.producto h2 {
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.precio {
+  color: #1aaf5d;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .catalogo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filtro-lateral {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .productos-camisetas {
+    justify-content: center;
+  }
+}

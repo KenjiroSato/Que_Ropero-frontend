@@ -1,0 +1,83 @@
+<main class="catalogo-container">
+  <!-- Filtro lateral -->
+  <aside class="filtro-lateral">
+    <h2>Filtros</h2>
+
+    <div class="busqueda">
+      <input type="text" placeholder="Buscar producto..." />
+    </div>
+
+    <div class="filtro-seccion">
+      <h3>Categorías</h3>
+      <label><input type="checkbox" /> Camisas</label>
+      <label><input type="checkbox" /> Camisetas</label>
+      <label><input type="checkbox" /> Accesorios</label>
+    </div>
+
+    <div class="filtro-seccion">
+      <h3>Subcategorías</h3>
+      <label><input type="checkbox" /> Clásicas</label>
+      <label><input type="checkbox" /> Premium</label>
+      <label><input type="checkbox" /> Urbanas</label>
+    </div>
+
+    <button class="btn-aplicar">Aplicar filtros</button>
+  </aside>
+
+  <!-- Catálogo de productos -->
+  <section class="productos-camisetas">
+    <div class="producto" (click)="agregarAlCarrito('Camisa Clasica', 200000, '/assets/imagenes/IMG-20250531-WA0016.jpg')">
+      <img src="/assets/imagenes/IMG-20250531-WA0016.jpg" alt="Camisa Clásica" />
+      <h2>Camisa Clásica</h2>
+      <p class="precio">$200.000</p>
+    </div>
+
+    <div class="producto"(click)="agregarAlCarrito('Camiseta Premium', 50000, '/assets/imagenes/IMG-20250531-WA0017.jpg')">
+      <img src="/assets/imagenes/IMG-20250531-WA0017.jpg" alt="Camiseta Premium" />
+      <h2>Camiseta Premium</h2>
+      <p class="precio">$50.000</p>
+    </div>
+
+    <div class="producto central"(click)="agregarAlCarrito('Camisa Urbana', 45000, '/assets/imagenes/IMG-20250531-WA0014.jpg')">
+      <img src="/assets/imagenes/IMG-20250531-WA0014.jpg" alt="Camisa Urbana" />
+      <h2>Camisa Urbana</h2>
+      <p class="precio">$45.000</p>
+    </div>
+
+     <div class="producto"(click)="agregarAlCarrito('Camisa Clasica', 200000, '/assets/imagenes/IMG-20250531-WA0016.jpg')">
+      <img src="/assets/imagenes/IMG-20250531-WA0016.jpg" alt="Camisa Clásica" />
+      <h2>Camisa Clásica</h2>
+      <p class="precio">$200.000</p>
+    </div>
+
+     <div class="producto"(click)="agregarAlCarrito('Camisa Clasica', 200000, '/assets/imagenes/IMG-20250531-WA0016.jpg')">
+      <img src="/assets/imagenes/IMG-20250531-WA0016.jpg" alt="Camisa Clásica" />
+      <h2>Camisa Clásica</h2>
+      <p class="precio">$200.000</p>
+    </div>
+
+     <div class="producto"(click)="agregarAlCarrito('Camisa Clasica', 200000, '/assets/imagenes/IMG-20250531-WA0016.jpg')">
+      <img src="/assets/imagenes/IMG-20250531-WA0016.jpg" alt="Camisa Clásica" />
+      <h2>Camisa Clásica</h2>
+      <p class="precio">$200.000</p>
+    </div>
+
+     <div class="producto"(click)="agregarAlCarrito('GORRA', 200000, '/assets/imagenes/IMG-20250531-WA0012.jpg')">
+      <img src="/assets/imagenes/IMG-20250531-WA0012.jpg" alt="GORRA" />
+      <h2>GORRA</h2>
+      <p class="precio">$200.000</p>
+    </div>
+
+     <div class="producto"(click)="agregarAlCarrito('GORRA NEWERA', 200000, '/assets/imagenes/IMG-20250531-WA0028.jpg')">
+      <img src="/assets/imagenes/IMG-20250531-WA0028.jpg" alt="GORRA NEWERA" />
+      <h2>Gorra NewEra</h2>
+      <p class="precio">$200.000</p>
+    </div>
+
+     <div class="producto"(click)="agregarAlCarrito('Camisa bof', 200000, '/assets/imagenes/2p.jpg')">
+      <img src="/assets/imagenes/2p.jpg" alt="Camisa bof" />
+      <h2>Camisa bof</h2>
+      <p class="precio">$200.000</p>
+    </div>
+  </section>
+</main>

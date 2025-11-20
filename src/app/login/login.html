@@ -1,0 +1,25 @@
+<div class="login-container">
+  <div class="login-card">
+    <h2>Iniciar Sesión</h2>
+    <form #loginform="ngForm" (ngSubmit)="login()" autocomplete="off">
+      <div class="form-group">
+        <label for="usr">Usuario</label>
+        <input type="text" id="usr" name="usr" required [(ngModel)]="usr">
+      </div>
+
+      <div class="form-group">
+        <label for="pwd">Contraseña</label>
+        <input type="password" id="pwd" name="pwd" required [(ngModel)]="pwd">
+      </div>
+
+      <button type="submit" class="btn" [disabled]="!loginform.form.valid">
+        Iniciar Sesión
+      </button>
+    </form>
+
+    <div class="extra-links">
+      <a href="#" class="link">¿Olvidaste tu contraseña?</a>
+      <a href="#" class="link">Crear cuenta nueva</a>
+    </div>
+  </div>
+</div>
